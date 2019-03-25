@@ -16,7 +16,7 @@ We consider eight STOA defense models on ImageNet:
 * [Input transformation through JPEG compression or total variance minimization (TVM)](https://openreview.net/pdf?id=SyJ7ClWCb);
 * [Rank-3 submission3in the NIPS 2017 defense competition (NIPS-r3)](https://github.com/anlthms/nips-2017/tree/master/mmd);
 
-We attacked these models by the fast gradient sign method (FGSM), momentum iterative fast gradient sign method (MI-FGSM), diverse input method (DIM), and their translation-invariant versions as TI-FGSM, TI-MI-FGSM, and TI-DIM. We attacked the ensemble of Inception V3, Inception V4, Inception ResNet V2, and ResNet V2 152 with epsilon 16. The results are:
+We attacked these models by the fast gradient sign method (FGSM), momentum iterative fast gradient sign method (MI-FGSM), diverse input method (DIM), and their translation-invariant versions as TI-FGSM, TI-MI-FGSM, and TI-DIM. We generated adversarial examples for the ensemble of Inception V3, Inception V4, Inception ResNet V2, and ResNet V2 152 with epsilon 16. The success rates against the eight defenses are:
 
 <img src="https://github.com/dongyp13/Translation-Invariant-Attacks/blob/master/results.png">
 
@@ -36,3 +36,8 @@ the
 The models can be downloaded at [Inception V3](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_v3.ckpt), [Inception V4](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_v4.ckpt), [Inception ResNet V2](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_resnet_v2_2016_08_30.ckpt.ckpt), and [ResNet V2 152](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/resnet_v2_152.ckpt).
 
 If you want to attack other models, you can replace the model definition part to your own models.
+
+### Hyper-parameters
+* For TI-FGSM, set ``num_iter=1``, ``momentum=0.0``, ``prob=0.0``;
+* For TI-MI-FGSM, set ``num_iter=10``, ``momentum=1.0``, ``prob=0.0``;
+* For TI-DIM, set ``num_iter=10``, ``momentum=1.0``, ``prob=0.7``;
