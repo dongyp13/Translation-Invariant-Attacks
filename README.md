@@ -18,7 +18,7 @@ We consider eight STOA defense models on ImageNet:
 
 We attacked these models by the fast gradient sign method (FGSM), momentum iterative fast gradient sign method (MI-FGSM), diverse input method (DIM), and their translation-invariant versions as TI-FGSM, TI-MI-FGSM, and TI-DIM. We attacked the ensemble of Inception V3, Inception V4, Inception ResNet V2, and ResNet V2 152. The results are:
 
-<img src="https://github.com/dongyp13/Translation-Invariant-Attacks/rsults.png">
+<img src="https://github.com/dongyp13/Translation-Invariant-Attacks/results.png">
 
 ### Citation
 If you use our method for attacks in your research, please consider citing
@@ -33,12 +33,6 @@ the
 ## Implementation
 
 ### Models
-We use the ensemble of eight models in our submission, many of which are adversarially trained models. The models can be downloaded [here](http://ml.cs.tsinghua.edu.cn/~yinpeng/nips17/nontargeted/models.zip).
+The models can be downloaded at [Inception V3](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_v3.ckpt), [Inception V4](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_v4.ckpt), [Inception ResNet V2](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_resnet_v2_2016_08_30.ckpt.ckpt), and [ResNet V2 152](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/resnet_v2_152.ckpt).
 
 If you want to attack other models, you can replace the model definition part to your own models.
-
-### Cleverhans
-We also implement this method in [Cleverhans](https://github.com/tensorflow/cleverhans/blob/master/cleverhans/attacks.py#L454-L605).
-
-### Targeted Attacks
-Please find the targeted attacks at [https://github.com/dongyp13/Targeted-Adversarial-Attack](https://github.com/dongyp13/Targeted-Adversarial-Attack).
