@@ -16,7 +16,7 @@ We consider eight STOA defense models on ImageNet:
 * [Input transformation through JPEG compression or total variance minimization (TVM)](https://openreview.net/pdf?id=SyJ7ClWCb);
 * [Rank-3 submission3in the NIPS 2017 defense competition (NIPS-r3)](https://github.com/anlthms/nips-2017/tree/master/mmd);
 
-We attacked these models by the fast gradient sign method (FGSM), momentum iterative fast gradient sign method (MI-FGSM), diverse input method (DIM), and their translation-invariant versions as TI-FGSM, TI-MI-FGSM, and TI-DIM. We generated adversarial examples for the ensemble of Inception V3, Inception V4, Inception ResNet V2, and ResNet V2 152 with epsilon 16. The success rates against the eight defenses are:
+We attacked these models by the [fast gradient sign method](https://arxiv.org/abs/1412.6572) (FGSM), [momentum iterative fast gradient sign method](https://arxiv.org/abs/1710.06081) (MI-FGSM), [diverse input method](https://arxiv.org/abs/1803.06978) (DIM), and their translation-invariant versions as TI-FGSM, TI-MI-FGSM, and TI-DIM. We generated adversarial examples for the ensemble of Inception V3, Inception V4, Inception ResNet V2, and ResNet V2 152 with epsilon 16. The success rates against the eight defenses are:
 
 <img src="https://github.com/dongyp13/Translation-Invariant-Attacks/blob/master/results.png">
 
