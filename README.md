@@ -1,10 +1,10 @@
-# Non-Targeted-Adversarial-Attacks
+# Translation-Invariant Attacks
 
 ## Introduction
-This repository contains the code for the top-1 submission to [NIPS 2017: Non-targeted Adversarial Attacks Competition](https://www.kaggle.com/c/nips-2017-non-targeted-adversarial-attack).
+This repository contains the code for [Evading Defenses to Transferable Adversarial Examples by Translation-Invariant Attacks]() (CVPR 2019 Oral).
 
 ## Method
-We propose a momentum iterative method to generate more transferable adversarial examples. We summarize our algorithm in [Boosting Adversarial Attacks with Momentum](https://arxiv.org/pdf/1710.06081.pdf) (CVPR 2018, Spotlight).
+We propose a translation-invariant attack method to generate more transferable adversarial examples. Our attack method can fool eight SOTA defense methods on ImageNet at an 82% success rate on average.
 
 Basically, the update rule of momentum iterative method is:
 
@@ -13,7 +13,7 @@ Basically, the update rule of momentum iterative method is:
 
 ### Citation
 If you use momentum iterative method for attacks in your research, please consider citing
-
+the
     @inproceedings{dong2018boosting,
       title={Boosting Adversarial Attacks with Momentum},
       author={Dong, Yinpeng and Liao, Fangzhou and Pang, Tianyu and Su, Hang and Zhu, Jun and Hu, Xiaolin and Li, Jianguo},
