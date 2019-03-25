@@ -4,12 +4,13 @@
 This repository contains the code for [Evading Defenses to Transferable Adversarial Examples by Translation-Invariant Attacks]() (CVPR 2019 Oral).
 
 ## Method
-We propose a translation-invariant attack method to generate more transferable adversarial examples. Our attack method can fool eight SOTA defense methods on ImageNet at an 82% success rate on average.
+We proposed a translation-invariant attack method to generate more transferable adversarial examples. This method is implemented by convolving the gradient with a pre-defined kernel in each attack iteration, and can be integrated into any gradient-based attack method. We consider eight STOA defense models on ImageNet
 
-Basically, the update rule of momentum iterative method is:
-
-![equation](http://latex.codecogs.com/gif.latex?g_%7Bt&plus;1%7D%20%3D%20%5Cmu%20%5Ccdot%20g_%7Bt%7D%20&plus;%20%5Cfrac%7B%5Cnabla_%7Bx%7DJ%28x_%7Bt%7D%5E%7B*%7D%2Cy%29%7D%7B%5C%7C%5Cnabla_%7Bx%7DJ%28x_%7Bt%7D%5E%7B*%7D%2Cy%29%5C%7C_1%7D%2C%20%5Cquad%20x_%7Bt&plus;1%7D%5E%7B*%7D%20%3D%20%5Cmathrm%7Bclip%7D%28x_%7Bt%7D%5E%7B*%7D%20&plus;%20%5Calpha%5Ccdot%5Cmathrm%7Bsign%7D%28g_%7Bt&plus;1%7D%29%29)
-
+* Inc-v3<sub>ens3</sub>, Inc-v3<sub>ens4</sub>, IncRes-v2<sub>ens</sub> trained by [Ensemble Adversarial Training](https://arxiv.org/abs/1705.07204)
+* High-level representation guided denoiser (HGD, top-1 submission in the NIPS 2017 defense competition)
+* Input transformation through random resizing and padding (R&P, rank-2 submission in the NIPS 2017 defense competition)
+* Input transformation through JPEG compression or total variance minimization (TVM)
+* Rank-3 submission3in the NIPS 2017 defense competition (NIPS-r3)
 
 ### Citation
 If you use momentum iterative method for attacks in your research, please consider citing
