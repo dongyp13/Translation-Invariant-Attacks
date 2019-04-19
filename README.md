@@ -1,10 +1,19 @@
 # Translation-Invariant Attacks
 
 ## Introduction
-This repository contains the code for [Evading Defenses to Transferable Adversarial Examples by Translation-Invariant Attacks]() (CVPR 2019 Oral).
+This repository contains the code for [Evading Defenses to Transferable Adversarial Examples by Translation-Invariant Attacks](https://arxiv.org/pdf/1904.02884.pdf) (CVPR 2019 Oral).
 
 ## Method
 We proposed a translation-invariant (TI) attack method to generate more transferable adversarial examples. This method is implemented by convolving the gradient with a pre-defined kernel in each attack iteration, and can be integrated into any gradient-based attack method. 
+
+## Run the code
+First download the [models](#Models). You can also use other models by changing the model definition part in the code.
+Then run the following command
+```
+bash run_attack.py input_dir output_dir
+```
+where original images are stored in ``input_dir`` with ``.png`` format, and the generated adversarial images are saved in ``output_dir``.
+We used the Python 2.7 and Tensorflow 1.12 versions. 
 
 ## Results
 
