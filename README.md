@@ -42,7 +42,7 @@ If you use our method for attacks in your research, please consider citing
 ## Implementation
 
 ### Models
-The models can be downloaded at [Inception V3](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_v3.ckpt), [Inception V4](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_v4.ckpt), [Inception ResNet V2](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_resnet_v2_2016_08_30.ckpt.ckpt), and [ResNet V2 152](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/resnet_v2_152.ckpt).
+The models can be downloaded at [Inception V3](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_v3.ckpt), [Inception V4](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_v4.ckpt), [Inception ResNet V2](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/inception_resnet_v2_2016_08_30.ckpt), and [ResNet V2 152](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/resnet_v2_152.ckpt).
 
 If you want to attack other models, you can replace the model definition part to your own models.
 
