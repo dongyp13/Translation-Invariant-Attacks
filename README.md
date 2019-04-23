@@ -10,7 +10,7 @@ We proposed a translation-invariant (TI) attack method to generate more transfer
 First download the [models](#Models). You can also use other models by changing the model definition part in the code.
 Then run the following command
 ```
-bash run_attack.sh input_dir output_dir
+bash run_attack.sh input_dir output_dir 16
 ```
 where original images are stored in ``input_dir`` with ``.png`` format, and the generated adversarial images are saved in ``output_dir``.
 We used the Python 2.7 and Tensorflow 1.12 versions. 
