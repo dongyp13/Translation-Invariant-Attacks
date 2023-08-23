@@ -17,7 +17,7 @@ We used the Python 2.7 and Tensorflow 1.12 versions.
 
 ## Results
 
-We consider eight STOA defense models on ImageNet:
+We consider eight SOTA defense models on ImageNet:
 
 * Inc-v3<sub>ens3</sub>, Inc-v3<sub>ens4</sub>, IncRes-v2<sub>ens</sub> trained by [Ensemble Adversarial Training](https://arxiv.org/abs/1705.07204);
 * [High-level representation guided denoiser](https://arxiv.org/abs/1712.02976) (HGD, top-1 submission in the NIPS 2017 defense competition);
